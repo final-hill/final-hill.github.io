@@ -1,2 +1,2 @@
 # final-hill.github.io
-The Website for Final Hill
+The website for Final Hill
