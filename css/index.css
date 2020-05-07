@@ -1,0 +1,30 @@
+:root {
+	--font-color: #ccc;
+	--link-color: #61A5E4;
+	--bg-color: #000;
+}
+
+body, html {
+	background-color: var(--bg-color);
+	color: var(--font-color);
+	font-family: "Noto Sans","Lucida Grande","Lucida Sans","Segoe UI",sans-serif;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.site-content{}
+
+.site-content_body{}
+
+.home-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
