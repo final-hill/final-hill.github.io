@@ -7,7 +7,7 @@
 body, html {
 	background-color: var(--bg-color);
 	color: var(--font-color);
-	font-family: "Noto Sans","Lucida Grande","Lucida Sans","Segoe UI",sans-serif;
+	font-family: 'Times New Roman', Times, serif;
 	height: 100%;
 	margin: 0;
 	overflow: hidden;
@@ -27,4 +27,6 @@ body, html {
 	right: 0;
 	bottom: 0;
 	margin: auto;
+	max-width: 80%;
+    max-height: 80%;
 }
