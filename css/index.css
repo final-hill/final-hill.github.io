@@ -39,6 +39,18 @@ body, html {
 	background-size: cover;
 }
 
+.page-Home .site-content_body {
+	align-items: center;
+	display: flex;
+    flex-direction: column;
+	text-align: center;
+	padding: 0 1em;
+}
+
+.page-Home h2 {
+	text-shadow: 2px 2px black;
+}
+
 #hubspot-form {
 	display: flex;
 	flex-direction: column;
@@ -58,6 +70,7 @@ body, html {
     padding: 0.5em;
     border-radius: var(--border-radius) 0 0 var(--border-radius);
 	font-size: 1.2em;
+	max-width: 60vw;
 }
 
 #hubspot-form button {
@@ -71,15 +84,4 @@ body, html {
 
 #hubspot-form #hubspot-form_complete {
 	display: none;
-}
-
-.page-Home .site-content_body {
-	align-items: center;
-	display: flex;
-    flex-direction: column;
-	text-align: center;
-}
-
-.page-Home h2 {
-	text-shadow: 2px 2px black;
 }
