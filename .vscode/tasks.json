@@ -7,6 +7,7 @@
             "label": "build",
             "group": "build",
             "type": "shell",
+            "group": "build",
             "command": "jekyll build"
         },
         {
