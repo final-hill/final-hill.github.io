@@ -18,7 +18,8 @@
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     <script type="module" src="/scripts/main.js" defer></script>
   </head>
-  <body>
+  <body class="page-{{ page.title }}">
     {%- include site-content.html -%}
+    {%- include site-footer.html -%}
   </body>
 </html>
