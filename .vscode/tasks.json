@@ -6,21 +6,25 @@
         {
             "label": "build",
             "type": "shell",
+            "group": "build",
             "command": "jekyll build"
         },
         {
             "label": "serve",
             "type": "shell",
+            "group": "build",
             "command": "jekyll build"
         },
         {
             "label": "install",
             "type": "shell",
+            "group": "build",
             "command": "bundle install"
         },
         {
             "label": "build-serve",
             "type": "shell",
+            "group": "build",
             "command": "bundle exec jekyll serve"
         }
     ]
