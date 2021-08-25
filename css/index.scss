@@ -1,0 +1,36 @@
+---
+---
+
+:root {
+	--font-color: #ccc;
+	--primary-color: #B16212;
+	--secondary-color: #1261B1;
+	--bg-primary-color: #444;
+	--bg-secondary-color: #333;
+	--bg-ternary-color: #212121;
+	--border-radius: 0.5em;
+	--shadow-color: #000;
+}
+
+body, html {
+	background-color: var(--bg-primary-color);
+	color: var(--font-color);
+	font-family: 'Times New Roman', Times, serif;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+a {
+	color: inherit;
+}
+
+@import
+	"css/site-header",
+	"css/site-content",
+	"css/site-footer",
+	"css/page-Home"
+;
