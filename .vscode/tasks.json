@@ -5,6 +5,7 @@
     "tasks": [
         {
             "label": "build",
+            "group": "build",
             "type": "shell",
             "group": "build",
             "command": "jekyll build"
@@ -22,10 +23,11 @@
             "command": "bundle install"
         },
         {
-            "label": "build-serve",
+            "label": "build-serve drafts",
             "type": "shell",
             "group": "build",
-            "command": "bundle exec jekyll serve"
+            "command": "bundle exec jekyll serve --drafts --watch",
+            "problemMatcher": []
         }
     ]
 }

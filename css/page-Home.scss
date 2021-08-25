@@ -1,42 +1,10 @@
-:root {
-	--font-color: #ccc;
-	--primary-color: #B16212;
-	--secondary-color: #1261B1;
-	--bg-color: #000;
-	--border-radius: 0.5em;
-}
-
-body, html {
-	background-color: var(--bg-color);
-	color: var(--font-color);
-	font-family: 'Times New Roman', Times, serif;
-	height: 100%;
-	margin: 0;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 100%;
-}
-
-.site-content {
-	height: 100%;
-    overflow: auto;
-}
-
-.site-content_body {}
-
-.home-heading {
-	font-size: 3em;
-}
-
-.home-icon {
-	height: 1em;
-	vertical-align: middle;
-}
-
 .page-Home {
 	background-image: url('/media-library/ISS043-E-88591_-_View_of_Earth.jpg');
 	background-size: cover;
+}
+
+.page-Home .site-header {
+	background-color: transparent;
 }
 
 .page-Home .site-content_body {
@@ -51,19 +19,19 @@ body, html {
 	text-shadow: 2px 2px black;
 }
 
-#hubspot-form {
+.page-Home #hubspot-form {
 	display: flex;
 	flex-direction: column;
 	margin: 2em 0;
 }
 
-#hubspot-form fieldset {
+.page-Home #hubspot-form fieldset {
 	border: none;
 	display: flex;
 	justify-content: center;
 }
 
-#hubspot-form input {
+.page-Home #hubspot-form input {
 	height: 2em;
 	width: 20em;
     border: 1px solid var(--secondary-color);
@@ -73,7 +41,7 @@ body, html {
 	max-width: 60vw;
 }
 
-#hubspot-form button {
+.page-Home #hubspot-form button {
 	background-color: var(--secondary-color);
 	border-radius: 0 var(--border-radius) var(--border-radius) 0;
 	color: var(--font-color);
@@ -82,6 +50,11 @@ body, html {
 	font-size: 1.2em;
 }
 
-#hubspot-form #hubspot-form_complete {
+.page-Home #hubspot-form #hubspot-form_complete {
 	display: none;
+}
+
+.page-Home .site-footer {
+	background-color: transparent;
+	text-shadow: 2px 2px var(--shadow-color);
 }

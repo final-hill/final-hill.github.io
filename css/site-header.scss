@@ -1,0 +1,15 @@
+.site-header {
+	background-color: var(--bg-secondary-color);
+	height: 5em;
+	overflow: hidden;
+	padding: 0 1em;
+}
+
+.site-header .site-icon {
+	height: 1em;
+	vertical-align: middle;
+}
+
+.site-header .site-title {
+	text-decoration: none;
+}
