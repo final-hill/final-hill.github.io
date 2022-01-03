@@ -8,8 +8,8 @@ class HubSpotForm {
 
     constructor(form) {
         this.elForm = form
-        this.elFormFields = form.querySelector('#hubspot-form_fields')
-        this.elFormComplete = form.querySelector('#hubspot-form_complete')
+        this.elFormFields = form.querySelector('.hubspot-form_fields')
+        this.elFormComplete = form.querySelector('.hubspot-form_complete')
         form.addEventListener('submit',(e) => this.submit(e))
     }
 

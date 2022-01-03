@@ -8,6 +8,9 @@ permalink: /privacy-policy
 
 ### Plain English
 
+Unless you explicitly submit your information via the provided forms, we don't care who you are.
+You can request that the data you submit be removed from our records.
+
 ### Cookies
 
 No cookies are set or read from your machine.
@@ -20,15 +23,15 @@ There is no 3rd party content embedded in this website so no 3rd party website c
 
 No analytics scripts or tracking techniques are being leveraged to identify you as a visitor.
 
-### Who I share your data with
+### Who we share your data with
 
 In the short-term [HubSpot](https://www.hubspot.com/) is being used to maintain the list of email
-addresses submitted to this site via the form on the homepage. This is only being by Final Hill LLC to
+addresses submitted to this site via the form on the homepage. This is **only** being used by Final Hill LLC to
 notify you of future updates to products and services provided.
 
 HubSpot has its own Privacy Policy that can be viewable [here](https://legal.hubspot.com/privacy-policy).
 
-### How long I retain your data
+### How long we retain your data
 
 The email address submitted is stored indefinitely unless and until you choose to unsubscribe.
 
@@ -44,4 +47,4 @@ You can view their privacy policy [here](https://docs.github.com/en/github/site-
 
 ### Contact
 
-For any additional questions and concerns you can send an email to <michael.haufe@final-hill.com>.
+For any additional questions and concerns you can contact us via the [Contact page](/contact).

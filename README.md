@@ -1,2 +1,3 @@
 # final-hill.github.io
-The website for Final Hill
+
+The website for Final Hill LLC.
