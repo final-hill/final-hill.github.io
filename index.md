@@ -8,8 +8,12 @@ hero: /media-library/ISS043-E-88591_-_View_of_Earth.jpg
 The destiny of Systems Engineering is to generate solutions defined entirely by Requirements.
 
 With requirements having such fundamental importance, why are the tools we rely on so anemic
-and disconnected from practice? It has been said that the best way to predict the future is to invent it.
-Final Hill is moving requirements engineering to where it belongs: As the foundation of human endeavors.
+and disconnected from their use? It has been said that the best way to predict the future is to invent it.
+Final Hill is moving requirements engineering to where it belongs: As the foundation of projects.
+
+This is being realized by a new platform that unifies Planning, Analysis, Design, Implementation,
+and Maintenance of a system while supporting strong Requirements traceability across all phases of the
+Systems Development Life-Cycle.
 
 We are still in the early stages of development. Join the mailing list to stay informed on how Final Hill
 is turning our vision into reality:
