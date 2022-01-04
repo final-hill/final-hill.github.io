@@ -15,7 +15,9 @@ This is being realized by a new platform that unifies Planning, Analysis, Design
 and Maintenance of a system while supporting strong Requirements traceability across all phases of the
 Systems Development Life-Cycle.
 
-We are still in the early stages of development. Join the mailing list to stay informed on how Final Hill
-is turning our vision into reality:
+While our main platform is still in the early stages of development, a number of utilities are available
+for purchase or for free at the [Libraries](libraries) page. 
+
+Join the mailing list to stay informed on how Final Hill is turning our vision into reality:
 
 {% include components/hubspot-form.html %}

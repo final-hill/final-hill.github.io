@@ -7,7 +7,7 @@ permalink: /libraries
 In the development of our major products a number of utility and supporting libraries have been created.
 These libraries are available for free under the [AGPL 3.0 license](https://www.gnu.org/licenses/agpl-3.0.en.html).
 You should [know what that means](https://choosealicense.com/licenses/agpl-3.0/) before using these in your own
-projects. If you would like an exception to this license per section 7 [contact us](/contact) to discuss the details.
+projects. If you would like an exception to this license per section 7 [contact us](/contact) to discuss the pricing details.
 
 #### [Decorator Contracts - TypeScript](https://www.npmjs.com/package/@final-hill/decorator-contracts)
 
