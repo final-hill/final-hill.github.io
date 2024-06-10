@@ -1,0 +1,1 @@
+{"rule":"POSSESSIVE_APOSTROPHE","sentence":"^\\QThis is being realized by the creation of a new software platform and supporting tools that unify Planning, Analysis, Design, Implementation, and Maintenance of a system while supporting strong Requirements traceability across all phases of the Systems Development Life-Cycle.\\E$"}
