@@ -37,7 +37,7 @@ The future of human endeavors must be built upon a foundation of structured requ
 
 ## Mission
 
-Our mission is to empower individuals and organizations to embrace structured requirements as the cornerstone of success in their endeavors. Through innovative tools, comprehensive training, and expert support, we enable our users to transform ambiguity into clarity and chaos into coherence. We are committed to providing a platform where requirements serve as the guiding pillars for strategic direction, innovation, and success, driving tangible outcomes with clarity, coherence, and confidence. Our goal is to envangelize a new standard where structured requirements shape the future of human endeavors, unlocking potential and driving progress worldwide.
+Our mission is to empower individuals and organizations to embrace structured requirements as the cornerstone of success in their endeavors. Through innovative tools, comprehensive training, and expert support, we enable our users to transform ambiguity into clarity and chaos into coherence. We are committed to providing a platform where requirements serve as the guiding pillars for strategic direction, innovation, and success, driving tangible outcomes with clarity, coherence, and confidence. Our goal is to evangelize a new standard where structured requirements shape the future of human endeavors, unlocking potential and driving progress worldwide.
 
 ## Situation
 
