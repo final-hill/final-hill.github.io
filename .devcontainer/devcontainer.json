@@ -1,0 +1,27 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+	"name": "Lapis Language Website",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"postStartCommand": "npm install && git config --global --get-all safe.directory | grep -q \"^${containerWorkspaceFolder}$\" || git config --global --add safe.directory ${containerWorkspaceFolder}",
+	"customizations": {
+        "vscode": {
+            "extensions": [
+				"Nuxtr.nuxtr-vscode",
+				"Vue.volar",
+				"EditorConfig.EditorConfig",
+				"github.vscode-github-actions",
+				"bierner.markdown-mermaid",
+				"bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+				"hediet.vscode-drawio",
+				"vitest.explorer",
+				"kingwl.vscode-vitest-runner",
+				"bradlc.vscode-tailwindcss",
+				"xadamxk.prune-stale-git-branches",
+				"Nuxt.mdc"
+			]
+        }
+    },
+  "remoteUser": "node"
+}
