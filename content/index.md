@@ -42,5 +42,5 @@ user-friendly. Unlike existing tools, `Cathedral` will be designed to support a 
 Our platform is still in the early stages of development. Join the mailing list to stay
 up-to-date on our progress and to be notified when we launch.
 
-::HubSpotForm 
+::HubSpotForm
 ::
