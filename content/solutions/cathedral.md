@@ -1,5 +1,7 @@
 ---
 title: Cathedral
+description: A comprehensive platform for requirements engineering.
+date: 2025-10-19
 ---
 
 ::UPageHeader{title="Cathedral"}

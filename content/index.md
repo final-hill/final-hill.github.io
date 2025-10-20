@@ -1,6 +1,7 @@
 ---
 title: Final Hill
 description: Constructing Solutions, Crafting Legacies
+date: 2025-10-19
 ---
 
 ::home-hero

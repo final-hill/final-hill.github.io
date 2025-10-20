@@ -1,5 +1,7 @@
 ---
 title: Privacy Policy
+date: 2025-10-19
+description: Our commitment to your privacy and data protection.
 ---
 
 ::UPageHeader{title="Privacy Policy"}

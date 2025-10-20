@@ -1,5 +1,7 @@
 ---
 title: Libraries
+description: A collection of utility libraries developed for our platform.
+date: 2025-10-19
 ---
 
 ::UPageHeader{title="Libraries"}
