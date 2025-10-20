@@ -61,7 +61,7 @@ async function onSubmit(event: FormSubmitEvent<typeof state>) {
               required
             />
             <template #description>
-              <span id="email-description" class="sr-only">
+              <span id="email-description">
                 We'll use this to send you updates about our latest content.
               </span>
             </template>
