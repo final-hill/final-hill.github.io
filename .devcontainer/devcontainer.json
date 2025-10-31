@@ -1,6 +1,6 @@
 // See https://containers.dev/implementors/json_reference/ for configuration reference
 {
-	"name": "Lapis Language Website",
+	"name": "Final Hill Website",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
