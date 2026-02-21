@@ -14,6 +14,13 @@ export default defineNuxtConfig({
     content: {
         experimental: { nativeSqlite: true },
     },
+    fonts: {
+        providers: {
+            google: false,
+            bunny: false,
+            googleicons: false,
+        }
+    },
     site: {
         url: 'https://final-hill.com',
         title: 'Final Hill'
