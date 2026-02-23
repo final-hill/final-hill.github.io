@@ -11,7 +11,7 @@ date: 2025-10-19
 
 ## The Problem
 
-Most projects fail ([~75%](https://web.archive.org/web/20230608090039/https://www.standishgroup.com/sample_research_files/DemoPRBR.pdf)). They fall short in terms of deadlines, budget, or scope. They fail to satisfy stakeholder requirements, and they struggle to generate value. The source of these setbacks frequently traces back to requirements. As the bedrock of any project, requirements are crucial; however, they are frequently inadequately defined, misunderstood, or mishandled. This results in ambiguity, miscommunication, and discord, ultimately leading to project failure.
+Most projects [fail](https://web.archive.org/web/20211007050508/https://www.projectsmart.co.uk/white-papers/chaos-report.pdf). They fall short in terms of deadlines, budget, or scope. They fail to satisfy stakeholder requirements, and they struggle to generate value. The source of these setbacks frequently traces back to requirements. As the bedrock of any project, requirements are crucial; however, they are frequently inadequately defined, misunderstood, or mishandled. This results in ambiguity, miscommunication, and discord, ultimately leading to project failure.
 
 Formal methods for requirements engineering exist, but they are often overlooked or underutilized. This is due to a lack of awareness, training, or easy to use tools. As a result, many projects proceed without a structured approach to requirements, leading to the aforementioned issues.
 
