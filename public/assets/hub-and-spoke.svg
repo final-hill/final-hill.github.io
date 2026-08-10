@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="Hub-and-spoke diagram: Cathedral at the center with Jira, Slack, Claude, and Azure DevOps as spokes around it">
+  <defs>
+    <style>
+      .hub-circle { fill: #f59e0b; }
+      .hub-label { fill: #18181b; font-family: Cambria, Georgia, serif; font-size: 22px; font-weight: bold; text-anchor: middle; }
+      .spoke-circle { fill: #27272a; }
+      .spoke-label { fill: #fafafa; font-family: Cambria, Georgia, serif; font-size: 14px; font-weight: bold; text-anchor: middle; }
+      .spoke-sub { fill: #a1a1aa; font-family: Cambria, Georgia, serif; font-size: 11px; text-anchor: middle; }
+      .edge { stroke: #71717a; stroke-width: 2; fill: none; }
+      .edge-label { fill: #a1a1aa; font-family: Cambria, Georgia, serif; font-size: 10px; text-anchor: middle; }
+      .title { fill: #18181b; font-family: Cambria, Georgia, serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Edges -->
+  <line class="edge" x1="400" y1="250" x2="180" y2="120" />
+  <line class="edge" x1="400" y1="250" x2="620" y2="120" />
+  <line class="edge" x1="400" y1="250" x2="180" y2="380" />
+  <line class="edge" x1="400" y1="250" x2="620" y2="380" />
+
+  <!-- Edge labels -->
+  <text class="edge-label" x="280" y="175">ingest / sync</text>
+  <text class="edge-label" x="520" y="175">ingest / sync</text>
+  <text class="edge-label" x="280" y="325">ingest / sync</text>
+  <text class="edge-label" x="520" y="325">ingest / sync</text>
+
+  <!-- Hub: Cathedral -->
+  <circle class="hub-circle" cx="400" cy="250" r="70" />
+  <text class="hub-label" x="400" y="245">Cathedral</text>
+  <text class="spoke-sub" x="400" y="265" style="fill:#18181b">system of record</text>
+
+  <!-- Spokes -->
+  <circle class="spoke-circle" cx="180" cy="120" r="45" />
+  <text class="spoke-label" x="180" y="118">Jira</text>
+  <text class="spoke-sub" x="180" y="135">tickets</text>
+
+  <circle class="spoke-circle" cx="620" cy="120" r="45" />
+  <text class="spoke-label" x="620" y="118">Claude</text>
+  <text class="spoke-sub" x="620" y="135">agent</text>
+
+  <circle class="spoke-circle" cx="180" cy="380" r="45" />
+  <text class="spoke-label" x="180" y="378">Slack</text>
+  <text class="spoke-sub" x="180" y="395">messages</text>
+
+  <circle class="spoke-circle" cx="620" cy="380" r="45" />
+  <text class="spoke-label" x="620" y="375">Azure</text>
+  <text class="spoke-label" x="620" y="392">DevOps</text>
+
+  <!-- Title -->
+  <text class="title" x="400" y="40">Cathedral is the hub. Your tools are the spokes.</text>
+</svg>

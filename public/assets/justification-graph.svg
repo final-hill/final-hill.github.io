@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Goals justification graph: outcomes connected to features with one broken edge flagged red, showing a feature with no justification path">
+  <defs>
+    <style>
+      .node-goal { fill: #f59e0b; }
+      .node-feature { fill: #27272a; }
+      .node-broken { fill: #dc2626; }
+      .label { font-family: Cambria, Georgia, serif; font-size: 12px; text-anchor: middle; }
+      .label-light { fill: #fafafa; }
+      .label-dark { fill: #18181b; }
+      .edge { stroke: #71717a; stroke-width: 2; }
+      .edge-broken { stroke: #dc2626; stroke-width: 2; stroke-dasharray: 6 4; }
+      .title { fill: #18181b; font-family: Cambria, Georgia, serif; font-size: 16px; font-weight: bold; text-anchor: middle; }
+      .legend { fill: #71717a; font-family: Cambria, Georgia, serif; font-size: 11px; }
+    </style>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#71717a" />
+    </marker>
+  </defs>
+
+  <text class="title" x="400" y="30">Goals Justification Graph</text>
+
+  <!-- Goal nodes (top row) -->
+  <rect class="node-goal" x="100" y="60" width="140" height="40" rx="6" />
+  <text class="label label-dark" x="170" y="85">Goal: Reduce audit time</text>
+
+  <rect class="node-goal" x="560" y="60" width="140" height="40" rx="6" />
+  <text class="label label-dark" x="630" y="85">Goal: Patient safety</text>
+
+  <!-- Feature nodes (middle row) -->
+  <rect class="node-feature" x="60" y="200" width="140" height="40" rx="6" />
+  <text class="label label-light" x="130" y="225">Feature: Evidence export</text>
+
+  <rect class="node-feature" x="330" y="200" width="140" height="40" rx="6" />
+  <text class="label label-light" x="400" y="225">Feature: Traceability matrix</text>
+
+  <rect class="node-broken" x="600" y="200" width="140" height="40" rx="6" />
+  <text class="label label-light" x="670" y="225">Feature: Alert routing</text>
+
+  <!-- Edges (justification paths) -->
+  <line class="edge" x1="170" y1="100" x2="130" y2="200" marker-end="url(#arrow)" />
+  <line class="edge" x1="170" y1="100" x2="400" y2="200" marker-end="url(#arrow)" />
+  <line class="edge" x1="630" y1="100" x2="400" y2="200" marker-end="url(#arrow)" />
+
+  <!-- Broken edge (no justification path) -->
+  <line class="edge-broken" x1="630" y1="100" x2="670" y2="200" />
+  <text class="label" x="700" y="160" style="fill:#dc2626">⚠ no justification</text>
+
+  <!-- Check status row -->
+  <rect class="node-feature" x="60" y="320" width="140" height="30" rx="4" style="fill:#16a34a" />
+  <text class="label label-light" x="130" y="340">✓ checks pass</text>
+
+  <rect class="node-feature" x="330" y="320" width="140" height="30" rx="4" style="fill:#16a34a" />
+  <text class="label label-light" x="400" y="340">✓ checks pass</text>
+
+  <rect class="node-broken" x="600" y="320" width="140" height="30" rx="4" />
+  <text class="label label-light" x="670" y="340">✗ check failed</text>
+
+  <!-- Legend -->
+  <text class="legend" x="60" y="395">● Goal</text>
+  <text class="legend" x="160" y="395">● Feature (checks pass)</text>
+  <text class="legend" x="380" y="395">● Feature (check failed — no justification path)</text>
+</svg>
