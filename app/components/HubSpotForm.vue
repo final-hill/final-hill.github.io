@@ -44,6 +44,7 @@ async function onSubmit(event: FormSubmitEvent<typeof state>) {
     if (response.ok) {
       formComplete.value = true
       state.email = ''
+      state.website = ''
     }
   } catch (error) {
     console.error('Form submission error:', error)

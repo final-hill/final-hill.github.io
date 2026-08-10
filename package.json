@@ -23,9 +23,5 @@
     "minimatch": "^10.2.1",
     "serialize-javascript": "^7.0.3",
     "esbuild": "^0.28.2"
-  },
-  "allowScripts": {
-    "vue-demi@0.14.10": true,
-    "esbuild@0.28.2": true
   }
 }
