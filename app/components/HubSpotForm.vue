@@ -9,12 +9,22 @@ const formId = "88be57f6-d429-4d64-824e-f2747ef41a74"
 const actionUrl = `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`
 
 const state = reactive({
-  email: ''
+  email: '',
+  // Honeypot field — hidden from real users, bots tend to fill it
+  website: ''
 })
 
 const formComplete = ref(false)
 
 async function onSubmit(event: FormSubmitEvent<typeof state>) {
+  // If the honeypot field is filled, silently pretend it succeeded
+  if (event.data.website) {
+    formComplete.value = true
+    state.email = ''
+    state.website = ''
+    return
+  }
+
   try {
     const response = await fetch(actionUrl, {
       method: 'POST',
@@ -44,17 +54,17 @@ async function onSubmit(event: FormSubmitEvent<typeof state>) {
 <template>
   <section class="flex flex-col my-8 space-y-4" aria-labelledby="newsletter-heading">
     <h2 id="newsletter-heading" class="sr-only">Newsletter Subscription</h2>
-    
+
     <UForm v-if="!formComplete" :state="state" class="space-y-4" @submit="onSubmit">
       <fieldset class="flex justify-center">
         <legend class="sr-only">Enter your email to subscribe to our newsletter</legend>
         <div class="flex gap-4 items-end">
           <UFormField name="email" label="Email address" class="flex-1">
-            <UInput 
-              v-model="state.email" 
-              type="email" 
-              name="email" 
-              placeholder="Enter your email" 
+            <UInput
+              v-model="state.email"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
               size="lg"
               class="w-80"
               aria-describedby="email-description"
@@ -66,6 +76,19 @@ async function onSubmit(event: FormSubmitEvent<typeof state>) {
               </span>
             </template>
           </UFormField>
+          <!-- Honeypot field: visually hidden and aria-hidden so real users won't interact with it -->
+          <div aria-hidden="true" class="absolute left-[-9999px] top-auto w-px h-px overflow-hidden">
+            <label for="website">Website</label>
+            <input
+              id="website"
+              v-model="state.website"
+              type="text"
+              name="website"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </div>
+
           <UButton type="submit" size="lg" color="primary" aria-describedby="subscribe-description">
             Subscribe
           </UButton>
@@ -75,10 +98,10 @@ async function onSubmit(event: FormSubmitEvent<typeof state>) {
         </div>
       </fieldset>
     </UForm>
-    
+
     <aside v-if="formComplete" class="flex justify-center" role="status" aria-live="polite">
-      <UAlert 
-        color="success" 
+      <UAlert
+        color="success"
         variant="soft"
         title="Subscribed!"
         description="Thank you for subscribing to our newsletter."
