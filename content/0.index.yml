@@ -1,8 +1,9 @@
 title: Requirements that survive the conversation.
 description: >-
-  Cathedral is the system of record for requirements — the layer Jira, Slack,
-  and Claude structurally cannot provide. Agents propose. Cathedral adjudicates.
-  Humans curate via a visual model. Spokes sync.
+  Cathedral is the coherence layer for software development — the system of
+  record for machine-checkable requirements that Jira, Slack, and Claude
+  structurally cannot provide. Agents propose. Cathedral adjudicates. Humans
+  curate via a visual model. Spokes sync.
 
 hero:
   links:
@@ -21,18 +22,21 @@ sections:
   - id: problem
     title: The Problem
     description: >-
-      Most projects fail. They fall short on deadlines, budget, or scope. The
-      source traces back to requirements — inadequately defined, misunderstood,
-      or mishandled. But there is a new, acute failure mode the industry has
-      not named yet.
+      The cost of creating software is collapsing — LLMs generate code in
+      minutes. But the cost of understanding, maintaining, and being
+      responsible for that software is not decreasing at all. A developer can
+      say "the LLM produced this in 20 minutes" — but the organization may
+      have to operate it for ten years. Cheap creation creates expensive
+      complexity.
     orientation: horizontal
     features:
-      - title: The accountability vacuum
+      - title: The economic asymmetry
         description: >-
           The industry adopted AI coding tools at speed — without a
           machine-checkable specification substrate to check the work against.
           Code is generated faster than it can be justified. Nothing is
-          recording what was decided, why, or by whom.
+          recording what was decided, why, or by whom. The cost of creation
+          collapses; the cost of responsibility does not.
         icon: i-lucide-alert-triangle
       - title: Slower while believing they are faster
         description: >-
@@ -84,9 +88,11 @@ sections:
   - id: solution
     title: The Solution
     description: >-
-      Cathedral is the accountability layer for software development — a system
-      of record for machine-checkable requirements that Jira, Slack, and Claude
-      structurally cannot provide.
+      Traditional SDLC asks: "What steps do humans follow to produce this
+      software?" AI-native SDLC asks: "What properties must remain true as
+      agents continuously modify this software?" The SDLC does not disappear —
+      it moves upward. Cathedral is the AI-native SDLC: not the implementation
+      part (agents do that), but the part that moves upward.
     orientation: horizontal
     reverse: true
     features:
@@ -106,7 +112,7 @@ sections:
         icon: i-lucide-git-branch
       - title: The visual model
         description: >-
-          Cathedral makes accountability state legible as graphs, diagrams, and
+          Cathedral makes coherence state legible as graphs, diagrams, and
           matrices — not forms. A form cannot show you "three features have no
           justification path to a goal." A graph can, instantly.
         icon: i-lucide-network
@@ -151,8 +157,11 @@ sections:
   - id: who-its-for
     title: Who it's for
     description: >-
-      Cathedral is built for organizations already exposed to the cost of not
-      having a machine-checkable specification substrate.
+      The market is bifurcating. Small and simple systems: one human plus AI
+      yields enormous leverage. Large and critical systems: small autonomous
+      teams plus AI yield enormous leverage. The middle — traditional mid-size
+      teams that Scrum was built for — may shrink dramatically. Cathedral serves
+      both ends.
     orientation: horizontal
     features:
       - title: Regulated industries
@@ -204,12 +213,16 @@ sections:
         icon: i-lucide-file-check
 
 features:
-  title: Machine-checkable. Human-curated. Agent-fed.
+  title: The coherence layer
   description: >-
-    Requirements are not prose in a document. They are machine-checkable records
-    that a compiler-like check engine can fail. This is the return channel the
-    RCT showed developers are missing. Without it, specification is just
-    better-documented ambiguity.
+    When implementation is cheap, the limiting factor is not code production —
+    it is coherence: maintaining coherence between business intent,
+    architecture, domain model, APIs, data, security assumptions, tests,
+    operational behavior, documentation, regulatory constraints, dependencies,
+    and user expectations. An LLM can generate 100,000 lines of plausible code.
+    That does not mean anyone understands the resulting system. Cathedral is the
+    coherence layer — the PEGS model is a coherence framework, the check engine
+    is a coherence verifier, the visual model is a coherence surface.
   items:
     - title: Proof of what was decided and when
       description: >-
@@ -245,7 +258,7 @@ features:
 
 faq:
   title: Frequently asked questions
-  description: Everything you need to know about Cathedral and the accountability layer.
+  description: Everything you need to know about Cathedral and the coherence layer.
   items:
     - label: Is Cathedral an AI-powered requirements tool?
       content: >-
@@ -253,13 +266,24 @@ faq:
         machine-checkable requirements with a human-curated visual model. AI
         feeds it; it is not it. Leading with "AI-powered" positions Cathedral as
         a chat tool, which is exactly the wrong paradigm.
+    - label: What is the coherence layer?
+      content: >-
+        When implementation is cheap, the scarce resource is not code production
+        — it is coherence: maintaining coherence between business intent,
+        architecture, domain model, APIs, data, security assumptions, tests,
+        operational behavior, documentation, regulatory constraints,
+        dependencies, and user expectations. Coherence is the technical dimension
+        (does the system still make sense). Accountability is the social
+        dimension (who approved what, can you prove it). Cathedral is the
+        coherence layer — the PEGS model is a coherence framework, the check
+        engine is a coherence verifier, the visual model is a coherence surface.
     - label: How is this different from Jira or Azure DevOps?
       content: >-
         Jira tracks tickets. Azure DevOps tracks work items. Neither can produce
         an evidence pack for a regulator, block a merge for missing
         justification, or trace a feature to the stakeholder need that justified
-        it. They are edges. Cathedral is the hub — the accountability substrate
-        that makes the work they track trustworthy.
+        it. They are edges. Cathedral is the hub — the coherence substrate that
+        makes the work they track trustworthy.
     - label: What does "machine-checkable" mean?
       content: >-
         Requirements are not prose in a document. They are structured records
@@ -274,12 +298,14 @@ faq:
         the tangible artifact a regulator receives — and it is yours.
     - label: Who is Cathedral for?
       content: >-
-        Organizations already exposed to the cost of not having a
-        machine-checkable specification substrate: regulated industries,
-        safety-critical systems, audit-bound organizations, and teams inheriting
-        brownfield codebases. If your biggest problem is writing code faster, you
-        do not need Cathedral yet. If your biggest problem is proving that what
-        you built is what you should have built, and why — you do.
+        The market is bifurcating. Small and simple systems: one human plus AI
+        yields enormous leverage. Large and critical systems: small autonomous
+        teams plus AI yield enormous leverage. Cathedral serves both ends — the
+        individual who needs coherence for their agent swarm, and the small team
+        that needs accountability for regulated work. If your biggest problem is
+        writing code faster, you do not need Cathedral yet. If your biggest
+        problem is proving that what you built is what you should have built, and
+        why — you do.
 
 cta:
   title: Ready to make requirements survive the conversation?

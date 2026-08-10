@@ -90,7 +90,7 @@ useSeoMeta({
     <UPageSection
       id="evidence-pack"
       title="The evidence pack"
-      description="The tangible artifact a regulator receives — Cathedral's physical evidence for an intangible service. Exportable, non-proprietary, and customer-owned."
+      description="The tangible artifact a regulator receives — Cathedral's physical evidence for an intangible service. Exportable, non-proprietary, customer-owned. Proof of coherence, not just compliance."
       orientation="horizontal"
     >
       <UPageCard
