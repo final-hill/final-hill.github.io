@@ -5,6 +5,12 @@
 		"dockerfile": "Dockerfile"
 	},
 	"postStartCommand": "npm install && git config --global --get-all safe.directory | grep -q \"^${containerWorkspaceFolder}$\" || git config --global --add safe.directory ${containerWorkspaceFolder}",
+    // Features to add to the dev container. More info: https://containers.dev/features.
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": {
+            "version": "latest"
+        }
+    },
 	"customizations": {
         "vscode": {
             "extensions": [
