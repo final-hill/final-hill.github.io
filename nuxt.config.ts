@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
     compatibilityDate: '2025-10-19',
     devtools: { enabled: true },
-    ssr: false,
     modules: [
         '@nuxt/ui', // https://ui.nuxt.com/
         '@nuxt/content', // https://content.nuxt.com/docs/getting-started
@@ -11,15 +10,15 @@ export default defineNuxtConfig({
         'nuxt-feedme' // https://nuxt.com/modules/nuxt-feedme
     ],
     css: ['~/assets/css/main.css'],
+    icon: {
+        serverBundle: 'local',
+        clientBundle: {
+            scan: true,
+            sizeLimit: 512
+        }
+    },
     content: {
         experimental: { nativeSqlite: true },
-    },
-    fonts: {
-        providers: {
-            google: false,
-            bunny: false,
-            googleicons: false,
-        }
     },
     site: {
         url: 'https://final-hill.com',

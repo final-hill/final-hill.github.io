@@ -9,13 +9,13 @@ date: 2025-10-19
 
 ## Vision
 
-The future of human endeavors must be built upon a foundation of structured requirements, empowering us to transform ambiguity into clarity and chaos into coherence. In this world requirements serve as the guiding pillars for all endeavors, shaping success with precision and purpose. They will drive strategic direction, innovation, and success, shaping the future with clarity, coherence, and confidence.
+The future of software development must be built on a foundation of machine-checkable requirements — empowering teams to transform ambiguity into accountability and chaos into coherence. In this world, requirements are the guiding pillars of every endeavor: durable, inspectable, and enforceable. They survive the conversation.
 
 ---
 
 ## Mission
 
-Our mission is to empower individuals and organizations to embrace structured requirements as the cornerstone of success in their endeavors. Through innovative tools, comprehensive training, and expert support, we enable our users to transform ambiguity into clarity and chaos into coherence. We are committed to providing a platform where requirements serve as the guiding pillars for strategic direction, innovation, and success, driving tangible outcomes with clarity, coherence, and confidence. Our goal is to evangelize a new standard where structured requirements shape the future of human endeavors, unlocking potential and driving progress worldwide.
+Our mission is to provide the accountability layer for software development — a system of record for machine-checkable requirements that Jira, Slack, and Claude structurally cannot provide. Through Cathedral, we enable teams to derive requirements from the work they already do, check them against a formal model, and prove what was decided, why, and by whom.
 
 ---
 

@@ -1,0 +1,325 @@
+title: Requirements that survive the conversation.
+description: >-
+  Cathedral is the coherence layer for software development — the system of
+  record for machine-checkable requirements that Jira, Slack, and Claude
+  structurally cannot provide. Agents propose. Cathedral adjudicates. Humans
+  curate via a visual model. Spokes sync.
+
+hero:
+  links:
+    - label: Get early access
+      to: /#subscribe
+      icon: i-lucide-arrow-right
+      trailing: true
+      size: xl
+    - label: How it fits
+      to: /#how-it-fits
+      color: neutral
+      variant: outline
+      size: xl
+
+sections:
+  - id: problem
+    title: The Problem
+    description: >-
+      The cost of creating software is collapsing — LLMs generate code in
+      minutes. But the cost of understanding, maintaining, and being
+      responsible for that software is not decreasing at all. A developer can
+      say "the LLM produced this in 20 minutes" — but the organization may
+      have to operate it for ten years. Cheap creation creates expensive
+      complexity.
+    orientation: horizontal
+    features:
+      - title: The economic asymmetry
+        description: >-
+          The industry adopted AI coding tools at speed — without a
+          machine-checkable specification substrate to check the work against.
+          Code is generated faster than it can be justified. Nothing is
+          recording what was decided, why, or by whom. The cost of creation
+          collapses; the cost of responsibility does not.
+        icon: i-lucide-alert-triangle
+      - title: Slower while believing they are faster
+        description: >-
+          A randomized controlled trial showed experienced developers were 19%
+          slower with AI assistance, while believing they were 20% faster. That
+          is not a capability problem — it is a feedback-loop problem. Nothing
+          was checking their work.
+        icon: i-lucide-trending-down
+      - title: The missing return channel
+        description: >-
+          Cathedral's check engine is the return channel those developers were
+          missing. It would have told them their work had a quality gap — before
+          the auditor did.
+        icon: i-lucide-circle-check
+
+  - id: why-not
+    title: Why not just ChatGPT, Jira, or World Models?
+    description: >-
+      The buyer's first question is not "what does Cathedral do?" — it is "why
+      not just use what I already have?" The answer is the same in every case:
+      capability is not accountability.
+    orientation: horizontal
+    features:
+      - title: Why not just ChatGPT or Claude?
+        description: >-
+          A chat is a transient reasoning scratchpad, not a durable knowledge
+          substrate. A larger context window does not add persistence, a formal
+          model, automated checks, provenance, traceability, lifecycle, or
+          enforcement. When the conversation ends, the auditor arrives, or the
+          team switches agents — the chat is gone. Cathedral is what remains.
+        icon: i-lucide-message-circle
+      - title: Why not just wait for world models?
+        description: >-
+          A world model predicts what a system will do. It cannot tell you
+          whether what the system does is justified, endorsed, complete,
+          consistent, or compliant. Prediction answers "what will happen?"
+          Accountability answers "why is this the right thing to happen, who
+          approved it, and can you prove it?" A world model is a brilliant
+          architect with perfect memory and zero accountability.
+        icon: i-lucide-globe
+      - title: Why not just Jira or Azure DevOps?
+        description: >-
+          Jira tracks tickets. Azure DevOps tracks work items. Slack carries
+          messages. None can produce an evidence pack for a regulator, block a
+          merge for missing justification, or trace a feature to the stakeholder
+          need that justified it. They are edges. Cathedral is the hub.
+        icon: i-lucide-list-todo
+
+  - id: solution
+    title: The Solution
+    description: >-
+      Traditional SDLC asks: "What steps do humans follow to produce this
+      software?" AI-native SDLC asks: "What properties must remain true as
+      agents continuously modify this software?" The SDLC does not disappear —
+      it moves upward. Cathedral is the AI-native SDLC: not the implementation
+      part (agents do that), but the part that moves upward.
+    orientation: horizontal
+    reverse: true
+    features:
+      - title: The check engine
+        description: >-
+          Requirements are machine-checkable records that a compiler-like check
+          engine can fail. 13+ categories: correctness, completeness,
+          consistency, traceability, justifiability. A requirement that passes
+          is Active. One that fails is flagged — and blocks the merge.
+        icon: i-lucide-shield-check
+      - title: The endorsement lifecycle
+        description: >-
+          Finding → Proposed → Review → Active. An agent produces a Finding from
+          an artifact. Cathedral formalizes it. A reviewer endorses it. It
+          becomes Active when checks pass and the right human approves. Every
+          transition is versioned with provenance.
+        icon: i-lucide-git-branch
+      - title: The visual model
+        description: >-
+          Cathedral makes coherence state legible as graphs, diagrams, and
+          matrices — not forms. A form cannot show you "three features have no
+          justification path to a goal." A graph can, instantly.
+        icon: i-lucide-network
+      - title: Hub-and-spoke architecture
+        description: >-
+          Cathedral is the hub. Jira, Azure DevOps, Slack, and Claude are spokes
+          that ingest into and project from it. Agents propose. Cathedral
+          adjudicates. Humans curate. Spokes sync.
+        icon: i-lucide-share-2
+
+  - id: what-you-see
+    title: See what your tools can't show you
+    description: >-
+      Cathedral's visual model makes accountability state legible — as graphs,
+      diagrams, and matrices, not forms.
+    orientation: horizontal
+    image: /assets/what-you-see.svg
+    features:
+      - title: Goals as a justification graph
+        description: >-
+          See which features trace to which outcomes, and which have no
+          justification path — flagged red.
+        icon: i-lucide-target
+      - title: System as editable C4 diagrams
+        description: >-
+          Drag a component, draw an interface, and the underlying records update
+          with full versioning.
+        icon: i-lucide-box
+      - title: Glossary as a topic map
+        description: >-
+          Every term linked to every requirement that uses it. A term with no
+          occurrences is an orphan; a requirement using an undefined term is a
+          broken edge.
+        icon: i-lucide-book-marked
+      - title: Risks, Tasks, Personnel
+        description: >-
+          Risks as a probability × impact matrix. Tasks as kanban or timeline.
+          Personnel as a RACI matrix. Perspectives: the same model, rendered
+          differently for a Planner, Owner, Designer, or Builder.
+        icon: i-lucide-layout-grid
+
+  - id: who-its-for
+    title: Who it's for
+    description: >-
+      The market is bifurcating. Small and simple systems: one human plus AI
+      yields enormous leverage. Large and critical systems: small autonomous
+      teams plus AI yield enormous leverage. The middle — traditional mid-size
+      teams that Scrum was built for — may shrink dramatically. Cathedral serves
+      both ends.
+    orientation: horizontal
+    features:
+      - title: Regulated industries
+        description: >-
+          Must produce evidence packs for auditors. Cathedral exports them —
+          machine-checkable, provenance-chained, regulator-ready.
+        icon: i-lucide-scale
+      - title: Safety-critical systems
+        description: >-
+          Where a missing requirement can cause harm. The check engine catches
+          the gap before the system does.
+        icon: i-lucide-heart-pulse
+      - title: Audit-bound organizations
+        description: >-
+          Need to prove what was known and when. Every requirement carries
+          versioned provenance — file, line, session, PR.
+        icon: i-lucide-file-search
+      - title: Brownfield inheritors
+        description: >-
+          Teams inheriting codebases with no documentation. Cathedral derives the
+          implied requirements from the code itself.
+        icon: i-lucide-building
+
+  - id: how-it-fits
+    title: How it fits
+    description: >-
+      Cathedral is the hub. Your existing tools are spokes — projections of
+      Cathedral's canonical model, not the reverse.
+    orientation: horizontal
+    reverse: true
+    image: /assets/hub-and-spoke.svg
+    features:
+      - title: Ingestion paths (spokes → hub)
+        description: >-
+          Analyze code, analyze pull request, analyze session, analyze document.
+          Cathedral derives Findings from artifacts your team is already
+          producing. No one has to sit down and author requirements.
+        icon: i-lucide-download
+      - title: Projection paths (hub → spokes)
+        description: >-
+          Jira sync, Slack notifications, CI gates. The spokes carry projections
+          of the canonical model, but the model lives in Cathedral.
+        icon: i-lucide-upload
+      - title: The evidence pack
+        description: >-
+          The tangible artifact a regulator receives — exportable,
+          non-proprietary, and customer-owned. You own the substrate. Cathedral
+          is the layer, not the cage.
+        icon: i-lucide-file-check
+
+features:
+  title: The coherence layer
+  description: >-
+    When implementation is cheap, the limiting factor is not code production —
+    it is coherence: maintaining coherence between business intent,
+    architecture, domain model, APIs, data, security assumptions, tests,
+    operational behavior, documentation, regulatory constraints, dependencies,
+    and user expectations. An LLM can generate 100,000 lines of plausible code.
+    That does not mean anyone understands the resulting system. Cathedral is the
+    coherence layer — the PEGS model is a coherence framework, the check engine
+    is a coherence verifier, the visual model is a coherence surface.
+  items:
+    - title: Proof of what was decided and when
+      description: >-
+        Every requirement is versioned with provenance — file, line, session,
+        PR. Show the auditor exactly what was known and when.
+      icon: i-lucide-history
+    - title: Every feature traced to the need that justified it
+      description: >-
+        A justification graph shows which features trace to which goals — and
+        flags the ones with no justification path in red.
+      icon: i-lucide-link
+    - title: Block a merge for missing justification
+      description: >-
+        Enforcement tiers let you gate CI: no merge without an Active
+        requirement, no release without a passed check.
+      icon: i-lucide-lock
+    - title: See which features have no justification path
+      description: >-
+        The check engine runs 13+ categories — correctness, completeness,
+        consistency, traceability, justifiability — and tells you what is
+        broken.
+      icon: i-lucide-search-check
+    - title: Derived, not transcribed
+      description: >-
+        No one has to sit down and author requirements. Cathedral derives the
+        implied requirements from artifacts the team is already producing.
+      icon: i-lucide-wand-sparkles
+    - title: You own the substrate
+      description: >-
+        The record is exportable, non-proprietary, and portable. Cathedral is
+        the layer, not the cage.
+      icon: i-lucide-key
+
+faq:
+  title: Frequently asked questions
+  description: Everything you need to know about Cathedral and the coherence layer.
+  items:
+    - label: Is Cathedral an AI-powered requirements tool?
+      content: >-
+        No. AI is an ingestion mechanism, not the product. The product is
+        machine-checkable requirements with a human-curated visual model. AI
+        feeds it; it is not it. Leading with "AI-powered" positions Cathedral as
+        a chat tool, which is exactly the wrong paradigm.
+    - label: What is the coherence layer?
+      content: >-
+        When implementation is cheap, the scarce resource is not code production
+        — it is coherence: maintaining coherence between business intent,
+        architecture, domain model, APIs, data, security assumptions, tests,
+        operational behavior, documentation, regulatory constraints,
+        dependencies, and user expectations. Coherence is the technical dimension
+        (does the system still make sense). Accountability is the social
+        dimension (who approved what, can you prove it). Cathedral is the
+        coherence layer — the PEGS model is a coherence framework, the check
+        engine is a coherence verifier, the visual model is a coherence surface.
+    - label: How is this different from Jira or Azure DevOps?
+      content: >-
+        Jira tracks tickets. Azure DevOps tracks work items. Neither can produce
+        an evidence pack for a regulator, block a merge for missing
+        justification, or trace a feature to the stakeholder need that justified
+        it. They are edges. Cathedral is the hub — the coherence substrate that
+        makes the work they track trustworthy.
+    - label: What does "machine-checkable" mean?
+      content: >-
+        Requirements are not prose in a document. They are structured records
+        that a compiler-like check engine can fail. The engine runs 13+ check
+        categories: correctness, completeness, consistency, traceability,
+        justifiability, and more. Without machine-checkable specification,
+        specification is just better-documented ambiguity.
+    - label: Will I be locked in?
+      content: >-
+        No. The record is exportable, non-proprietary, and portable. You own the
+        substrate. Cathedral is the layer, not the cage. The evidence pack is
+        the tangible artifact a regulator receives — and it is yours.
+    - label: Who is Cathedral for?
+      content: >-
+        The market is bifurcating. Small and simple systems: one human plus AI
+        yields enormous leverage. Large and critical systems: small autonomous
+        teams plus AI yield enormous leverage. Cathedral serves both ends — the
+        individual who needs coherence for their agent swarm, and the small team
+        that needs accountability for regulated work. If your biggest problem is
+        writing code faster, you do not need Cathedral yet. If your biggest
+        problem is proving that what you built is what you should have built, and
+        why — you do.
+
+cta:
+  title: Ready to make requirements survive the conversation?
+  description: >-
+    Cathedral is in early development. Join the mailing list for early access —
+    prioritized for regulated, safety-critical, and audit-bound teams.
+  links:
+    - label: Get early access
+      to: /#subscribe
+      icon: i-lucide-arrow-right
+      trailing: true
+      size: xl
+    - label: Learn about Cathedral
+      to: /solutions/cathedral
+      color: neutral
+      variant: outline
+      size: xl

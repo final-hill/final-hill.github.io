@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" role="img" aria-label="Sample evidence pack export: a document showing requirements with provenance, endorsement status, and check results">
+  <defs>
+    <style>
+      .doc-bg { fill: #fafafa; stroke: #e4e4e7; stroke-width: 1; }
+      .header { fill: #18181b; font-family: Cambria, Georgia, serif; font-size: 16px; font-weight: bold; }
+      .subhead { fill: #71717a; font-family: Cambria, Georgia, serif; font-size: 11px; }
+      .req-id { fill: #f59e0b; font-family: Cambria, Georgia, serif; font-size: 12px; font-weight: bold; }
+      .req-text { fill: #27272a; font-family: Cambria, Georgia, serif; font-size: 12px; }
+      .badge-active { fill: #16a34a; }
+      .badge-review { fill: #f59e0b; }
+      .badge-text { fill: #fafafa; font-family: Cambria, Georgia, serif; font-size: 10px; font-weight: bold; text-anchor: middle; }
+      .prov { fill: #a1a1aa; font-family: Cambria, Georgia, serif; font-size: 10px; }
+      .check-pass { fill: #16a34a; font-family: Cambria, Georgia, serif; font-size: 11px; }
+      .check-fail { fill: #dc2626; font-family: Cambria, Georgia, serif; font-size: 11px; }
+      .divider { stroke: #e4e4e7; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- Document frame -->
+  <rect class="doc-bg" x="20" y="20" width="560" height="480" rx="8" />
+
+  <!-- Header -->
+  <text class="header" x="40" y="55">Evidence Pack — Cathedral Export</text>
+  <text class="subhead" x="40" y="75">Project: MedDevice v2.3 · Generated: 2026-08-10 · Standard: IEC 62304</text>
+  <line class="divider" x1="40" y1="90" x2="560" y2="90" />
+
+  <!-- Requirement 1 -->
+  <text class="req-id" x="40" y="120">REQ-014</text>
+  <text class="req-text" x="110" y="120">System shall log all dosage changes with timestamp and user ID.</text>
+  <rect class="badge-active" x="470" y="108" width="70" height="18" rx="9" />
+  <text class="badge-text" x="505" y="121">Active</text>
+  <text class="prov" x="40" y="138">Provenance: session#8821 · PR #234 · approved by: Dr. Chen (RA)</text>
+  <text class="check-pass" x="40" y="155">✓ traceability ✓ completeness ✓ consistency ✓ compliance</text>
+  <line class="divider" x1="40" y1="170" x2="560" y2="170" />
+
+  <!-- Requirement 2 -->
+  <text class="req-id" x="40" y="200">REQ-015</text>
+  <text class="req-text" x="110" y="200">System shall alert nurse within 5s of critical lab value.</text>
+  <rect class="badge-active" x="470" y="188" width="70" height="18" rx="9" />
+  <text class="badge-text" x="505" y="201">Active</text>
+  <text class="prov" x="40" y="218">Provenance: code:src/alert.ts:42 · session#8845 · approved by: M. Patel (QA)</text>
+  <text class="check-pass" x="40" y="235">✓ traceability ✓ completeness ✓ consistency ✓ compliance</text>
+  <line class="divider" x1="40" y1="250" x2="560" y2="250" />
+
+  <!-- Requirement 3 (with a failed check) -->
+  <text class="req-id" x="40" y="280">REQ-021</text>
+  <text class="req-text" x="110" y="280">System shall display patient allergy warnings on chart open.</text>
+  <rect class="badge-review" x="465" y="268" width="75" height="18" rx="9" />
+  <text class="badge-text" x="502" y="281">Review</text>
+  <text class="prov" x="40" y="298">Provenance: PR #251 · session#8901 · proposed by: agent (Claude)</text>
+  <text class="check-pass" x="40" y="315">✓ traceability ✓ consistency</text>
+  <text class="check-fail" x="40" y="333">✗ completeness: missing scenario step for unknown-allergy case</text>
+  <line class="divider" x1="40" y1="348" x2="560" y2="348" />
+
+  <!-- Summary footer -->
+  <text class="header" x="40" y="380" style="font-size:13px">Summary</text>
+  <text class="req-text" x="40" y="400">3 requirements · 2 Active · 1 Review · 1 failed check</text>
+  <text class="req-text" x="40" y="420">Endorsement lifecycle: Finding → Proposed → Review → Active</text>
+  <text class="prov" x="40" y="440">All requirements machine-checkable. Provenance chains intact.</text>
+  <text class="prov" x="40" y="458">Export format: non-proprietary JSON + PDF. Customer-owned.</text>
+</svg>
