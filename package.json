@@ -14,7 +14,7 @@
     "@nuxt/ui": "^4.10.0",
     "@nuxtjs/robots": "^6.1.4",
     "@nuxtjs/sitemap": "^8.3.4",
-    "nuxt": "^4.5.2",
+    "nuxt": "^4.6.3",
     "nuxt-feedme": "^2.1.0",
     "typescript": "^6.0.3",
     "vue": "^3.5.41"
